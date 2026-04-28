@@ -2,9 +2,8 @@ const Todo = require("../models/user");
 
 exports.createtask = async (req, res) => {
   try {
-    if(!req.body.task)
-    {
-        return res.json({message:"Task is required"})
+    if (!req.body.task) {
+      return res.json({ message: "Task is required" });
     }
     const Task = await Todo.create(req.body);
     res.json(Task);

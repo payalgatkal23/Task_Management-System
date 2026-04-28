@@ -32,7 +32,6 @@ project/
 ├── models/        # Task schema
 ├── controllers/   # Business logic
 ├── routes/        # API routes
-├── config/        # Database connection
 └── server.js      # Entry point
 ```
 
@@ -40,11 +39,11 @@ project/
 
 ## 🔗 API Endpoints
 
-| Method | Endpoint     | Description        |
-|--------|-------------|--------------------|
-| POST   | /tasks       | Create a new task  |
-| GET    | /tasks       | Get all tasks      |
-| DELETE | /tasks/:id   | Delete a task      |
+| Method | Endpoint   | Description       |
+| ------ | ---------- | ----------------- |
+| POST   | /tasks     | Create a new task |
+| GET    | /tasks     | Get all tasks     |
+| DELETE | /tasks/:id | Delete a task     |
 
 ---
 
@@ -77,7 +76,8 @@ Make sure MongoDB is running locally.
   "title": "Complete assignment",
   "status": "pending"
 }
-``` 
+```
+
 ---
 
 ## 🚧 Future Improvements
